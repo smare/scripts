@@ -1,0 +1,15 @@
+# This is the OpenGroup title attribute
+og:title=The Rock: A Love Story in 2 parts|name
+# This is the OpenGroup description atttribute
+# We should probably trim it if it is longer than 40 characters
+og:description=This is a brand new description sourced from the config file|name
+color-scheme=dark light|name
+# Also a brand new element, this with a property attribute
+og:type=website|property
+# This is a http-equiv with an equal sign in the value
+Cache-Control=max-age=120|http-equiv
+# This http-equiv exists and matches exactly so I shouldn't even see this comment
+Cache-Control=no-cache|http-equiv
+og:blee=crap on a stick|property
+# This is a new one
+X-UA-Compatible=IE=edge|http-equiv
