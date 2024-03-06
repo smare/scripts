@@ -1,2 +1,2 @@
 # scripts
-A collection of shell scripts I've found unusually useful
+A collection of shell scripts I've written or found unusually useful
