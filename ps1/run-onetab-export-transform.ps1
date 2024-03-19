@@ -16,7 +16,7 @@ Displays help information for this script.
 
 .EXAMPLE
 .\script.ps1 -filename "export.txt" -outputFile "webpage.html"
-Transforms "export.txt" from the default directory "C:\dev\data\onetab" into "webpage.html" in the same directory.
+Transforms "export.txt" from the default directory "C:\dev\data\test-data\onetab" into "webpage.html" in the same directory.
 
 .EXAMPLE
 .\script.ps1 -filename "C:\path\to\export.txt" -outputFile "C:\path\to\webpage.html"
@@ -43,7 +43,7 @@ if (-not $filename -or -not $outputFile) {
 }
 
 # Default directory for input and output files
-$defaultDir = "C:\dev\data\onetab"
+$defaultDir = "C:\dev\data\test-data\onetab"
 
 # Determine if the filename includes a directory path
 if (-not [System.IO.Path]::IsPathRooted($filename)) {

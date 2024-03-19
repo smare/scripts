@@ -1,0 +1,53 @@
+{
+    "countries": [
+        {
+            "id": 2,
+            "name": "USA",
+            "population": 350,
+            "prices": {
+                "us": {
+                    "ebook": {
+                        "buyUrl": "https:\\/\\/www.packtpub.com\\/buyitem\\/index\\/index\\/sku\\/9781800561601",
+                        "discountId": null,
+                        "discountType": "",
+                        "formattedPrice": "$43.99",
+                        "formattedSpecialPrice": "$29.99",
+                        "hidePrice": false,
+                        "label": "eBook",
+                        "orderIsbn": "9781800564732",
+                        "orderPageUrl": "https://www.packtpub.com/checkout/add/ebook/9781800564732",
+                        "price": 43.99,
+                        "showAmazonButton": false,
+                        "showRow": true,
+                        "special_price": 29.99
+                    },
+                    "print": {
+                        "buyUrl": "https:\\/\\/www.packtpub.com\\/buyitem\\/index\\/index\\/sku\\/9781800564732",
+                        "discountId": null,
+                        "discountType": "",
+                        "formattedPrice": "$54.99",
+                        "formattedSpecialPrice": "$0.00",
+                        "hidePrice": false,
+                        "label": "Print",
+                        "orderIsbn": "9781800564732",
+                        "orderPageUrl": "https://www.packtpub.com/checkout/add/print/9781800564732",
+                        "price": 54.99,
+                        "showAmazonButton": false,
+                        "showRow": true,
+                        "special_price": 0
+                    }
+                }
+            }
+        },
+        {
+            "id": 5,
+            "name": "Germany",
+            "population": 80
+        },
+        {
+            "id": 9,
+            "name": "Japan",
+            "population": 140
+        }
+    ]
+}
