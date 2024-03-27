@@ -1,6 +1,6 @@
 BEGIN {
     # Set the input field separator to a pipe
-    FS = " \\| ";	
+    FS = " \\| ";
     # Print the HTML header with styles as specified
     print "<!DOCTYPE html>";
     print "<html>";
@@ -14,21 +14,21 @@ BEGIN {
 	print "\t\t\tmargin-bottom: 50px;";
 	print "\t\t\twidth: 50%;"
     print "\t\t}";
-	
+
     print "\t\ta:nth-child(odd) {";
     print "\t\t\tbackground-color: #D3D3D3;";
 	print "\t\t\tdisplay: table-row;";
-    print "\t\t}";	
-	
+    print "\t\t}";
+
 	print "\t\ta:nth-child(even) {";
     print "\t\t\tbackground-color: #C0C0C0;";
 	print "\t\t\tdisplay: table-row;";
-    print "\t\t}";	
+    print "\t\t}";
 
     print "\t\ta:link {";
     print "\t\t\tcolor: blue;";
     print "\t\t}";
-	
+
     print "\t\ta:visited {";
     print "\t\t\tcolor: purple;";
     print "\t\t}";
@@ -41,13 +41,13 @@ BEGIN {
 
     print "\t\ta:link {";
     print "\t\t\tcolor: blue;";
-    print "\t\t}";	
+    print "\t\t}";
 
     print "\t\ta:active {";
     print "\t\t\tcolor: red;";
-    print "\t\t}";	
-	
-    
+    print "\t\t}";
+
+
 	print "\t\th2 {";
     print "\t\t\tcolor: #404040;";
 	print "\t\t\tbox-sizing: border-box;";
@@ -57,10 +57,10 @@ BEGIN {
 	print "\t\t\tfont-size: 175%;";
 	print "\t\t\tmargin-bottom: 20px;";
 	print "\t\t\ttext-align: center;";
-    print "\t\t}";	
+    print "\t\t}";
 
     print "\t</style>";
-	
+	print "\t<base target=\"_blank\" />"
 	print "\t<script>"
     print "\t\t// JavaScript to count <a> tags and display the count"
     print "\t\tdocument.addEventListener(\"DOMContentLoaded\", function() {"
@@ -69,8 +69,8 @@ BEGIN {
     print "\t\t\tdocument.getElementById('count').innerHTML = 'Total number of links: ' + count; // Display the count"
     print "\t\t});"
     print "\t</script>"
-	
-	
+
+
 	print "\t<meta charset=\"UTF-8\">"
     print "</head>";
     print "<body>";
@@ -90,7 +90,7 @@ NF > 1 && $1 ~ /^http/ {
 		# Trim default OFS (trailing CRLF)
 		gsub(/\r|\n/, "", textVal);
 		# Construct and print the HTML hyperlink
-		print "\t\t<a href=\"" link "\" title=\"" link "\">" textVal "</a>"	
+		print "\t\t<a href=\"" link "\" title=\"" link "\">" textVal "</a>"
 	}
 
 }
