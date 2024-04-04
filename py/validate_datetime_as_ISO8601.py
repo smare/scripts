@@ -26,23 +26,18 @@ def is_valid_iso8601_datetime(date_string="2023-03-09T10:29:01.226141Z"):
 	Validates an ISO 8601 datetime string using the
 
 	Args:
-	  date_string: The string to validate.
+		date_string: The string to validate.
 
 	Returns:
-	  True if the string is a valid ISO 8601 datetime, False otherwise.
-	  Uses the built-in datetime module, which previously did not
-	  recognize the "Z" suffix as valid so we are replacing it.
-	  However, as of Python 3.6, datetime provides a fromisoformat
-	  function that handles "Z".
+		True if the string is a valid ISO 8601 datetime, False otherwise.
+		Uses the built-in datetime module, which previously did not
+		recognize the "Z" suffix as valid so we are replacing it.
+		However, as of Python 3.6, datetime provides a fromisoformat
+		function that handles "Z".
 	"""
     try:
-		# Old way
-        # datetime.fromisoformat(date_string.replace('Z', '+00:00'))
-
-		# New way
         datetime.fromisoformat(date_string)
     except ValueError:
         print(f'{date_string} is not a valid ISO 8601 datetime.')
-		# print("%s is not a valid ISO 8601 datetime." % date_string)
         return False
     return True
